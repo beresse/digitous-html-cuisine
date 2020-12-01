@@ -1,0 +1,33 @@
+.jumbotron {
+    background-image: url(/img/header.jpg);
+    background-size: cover;
+    
+    
+}
+
+#footer{
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+    list-style-type: none;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#suzette{
+    max-width: 100%;
+}
+#metro{
+    max-width: 100%;
+}
+#vitaly{
+    max-width: 100%;
+}
+.liste-sans-points{
+    list-style: none;
+    padding: 0px;
+}
+#square{
+    max-width: 16%;
+}
