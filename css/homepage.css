@@ -11,9 +11,7 @@ header{
 .navbar-nav{
     font-family: 'Oswald';
 }
-.bg-light{
-    background-color: red;
-}
+
 footer{
     background:black;
     padding: 16px;
@@ -25,4 +23,8 @@ footer{
     list-style: none;
     margin-left: -20px;
     font-weight: lighter;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
