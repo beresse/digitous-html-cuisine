@@ -1,0 +1,28 @@
+header{
+    background:linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)),url(./../img/header.jpg) no-repeat center;
+    color: white;
+    font-family: 'Courgette';
+    background-size: cover;
+    padding-bottom: 72px;
+}
+#logo{
+    height: 80px;
+}
+.navbar-nav{
+    font-family: 'Oswald';
+}
+.bg-light{
+    background-color: red;
+}
+footer{
+    background:black;
+    padding: 16px;
+    color: white;
+}
+.list{
+    text-decoration: underline;
+    color: white;
+    list-style: none;
+    margin-left: -20px;
+    font-weight: lighter;
+}
