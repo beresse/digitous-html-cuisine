@@ -1,0 +1,32 @@
+header{
+    background:linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)),url(/header.7aab4a63.jpg) no-repeat center;
+    color: white;
+    font-family: 'Courgette';
+    background-size: cover;
+    padding-bottom: 72px;
+}
+#logo{
+    height: 80px;
+}
+.navbar-nav{
+    font-family: 'Oswald';
+}
+
+footer{
+    background:black;
+    padding: 16px;
+    color: white;
+}
+.list{
+    text-decoration: underline;
+    color: white;
+    list-style: none;
+    margin-left: -20px;
+    font-weight: lighter;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*# sourceMappingURL=/homepage.88463a57.css.map */

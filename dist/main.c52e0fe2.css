@@ -1,0 +1,38 @@
+.noir{
+    color: black;
+}
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+.courgette{
+    font-family: 'Courgette', sans-serif;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+footer{
+    background:black;
+    padding: 16px;
+    color: white;
+}
+.header-logo{
+    width: 70px;
+}
+
+.list{
+    text-decoration: underline;
+    color: #fff;
+    list-style: none;
+    margin-left: -20px;
+    font-weight: lighter;
+}
+
+.list:hover{
+    text-decoration: underline;
+    color: gray;
+}
+.navbar-nav{
+    font-family: 'Oswald';
+}
+
+/*# sourceMappingURL=/main.c52e0fe2.css.map */

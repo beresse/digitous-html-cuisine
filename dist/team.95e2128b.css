@@ -1,0 +1,39 @@
+header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/team.9c11e102.jpg) no-repeat center;
+    color: white;
+    font-family: 'Courgette';
+    background-size: cover;
+    padding-bottom: 82px;
+}
+
+.photo_de_profil {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+h3 {
+    font-family: 'Courgette';
+}
+
+p {
+    font-weight: 300;
+}
+
+.photo_avec_texte {
+    max-width: 350px;
+    border-radius: 50%;
+    padding-right: 16px;
+}
+
+a {
+    color: black;
+}
+
+body {
+    padding: 0px;
+
+}
+
+
+
+/*# sourceMappingURL=/team.95e2128b.css.map */

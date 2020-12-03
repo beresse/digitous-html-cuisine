@@ -1,0 +1,248 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accueil - Cui'zine</title>
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.scss">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/d52f97726b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand" href="./index.html">
+                <h2>Cui'zine</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipe2.html">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <hr class="bg-light m-0">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="text-center mb-5 p-5">
+                        <img class="courgette" id="logo" src="./img/logo_square_white.png"
+                            alt="logo de cui'zine en blanc">
+                        <h1>Cui'zine</h1>
+                        <h3>Le mag dzfezfe cuisine</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main data-router-wrapper>
+        <section  data-router-view="home" class="home">
+            <div class="home-content">
+                <div class="home-presentation">
+                    <h1>Transition smooth</h1>
+                    <p>belle transition sur une page html</p>
+                </div>
+                <img src="./images/home.svg" alt="home">
+            </div>
+        </section>
+    </main>
+    <div>
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center mt-5">Derniers Articles</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row ">
+
+            <div class="col">
+
+                <div class="row mt-5">
+
+
+                    <div class="col-md-12 col-12 col-lg-9">
+                        <div class="row">
+                            <div class="col-md-4 col-12 col-lg-3">
+                                <img class="img-fluid mb-3" src="./img/articles/suzette/suzette-small.jpg" alt="">
+                            </div>
+
+                            <div class="col-md-8 col-12 col-lg-9">
+                                <h3 class="courgette"> <a href="./suzette.html">Chez Suzette, la nouvelle crêperie qui
+                                        fait parler d'elle</a></h3>
+                                <p class="font-weight-light">La franchise "Chez Suzette" qui fait un carton chez les
+                                    bretons
+                                    ouvre son premier
+                                    restaurant
+                                    à
+                                    Paris
+                                    dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées,
+                                    salées au
+                                    froment
+                                    ou au sarrazin!</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-12 col-lg-3">
+                                <img class="img-fluid mb-3" src="./img/articles/metro/metro-small.jpg" alt="">
+                            </div>
+
+                            <div class="col-md-8 col-12 col-lg-9">
+                                <h3 class="courgette"> <a href="metro.html">Le Metro dessert</a> </h3>
+                                <p class="font-weight-light">Germain est ferrovipahte (ndlr:fan de train), son fils
+                                    Maxime est
+                                    pâtissier. Ils ont décidé de réunir leur
+                                    deux passions dans un restaurant à la déco inspiré du métro parisien. A voir
+                                    absolument,
+                                    mais qu'en est-il d'y
+                                    aller pour manger? Clémentine entre en gare et nous donne son avis.</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-12 col-lg-3">
+                                <img class="img-fluid mb-3" src="./img/articles/vitaly/vitaly-small.jpg" alt="">
+                            </div>
+
+                            <div class="col-md-8 col-12 col-lg-9">
+                                <h3 class="courgette"> <a href="./vitaly.html">Vitaly, le vegan italien</a></h3>
+                                <p class="font-weight-light">Quand on pense italien, on pense lasagne et jambon de
+                                    Parme. Ils
+                                    l'ont fait, les saveurs de l'Italie à portée
+                                    des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
+                            </div>
+
+                        </div>
+                        <a href="./page2.html" class="text-decoration-none text-dark">
+                            << Voir les articles précédents</a>
+
+
+
+                    </div>
+                    <div class="container-fluid col-lg-3 col-md-4 d-none d-lg-block float-right">
+                        <div>
+                            <form>
+                                <div class="form-group ">
+                                    <label class="courgette" for="text">Recherche</label>
+                                    <input type="text" class="form-control" placeholder="Recherche...">
+                                    <button type="button"
+                                        class="btn btn-outline-dark btn-block font-weight-bold">OK</button>
+                                </div>
+                                <div class=" form-group">
+                                    <label class="courgette" for="exampleInputEmail1">Newsletter</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        placeholder="Email...">
+                                    <button type="button"
+                                        class="btn btn-outline-dark btn-block font-weight-bold ">S'inscrire</button>
+                                </div>
+                                <div>
+                                    <h5 class="courgette">Partager</h5>
+                                    <a class="noir mr-3" href="#"><i class="fab fa-facebook-square "></i></a>
+                                    <a class="noir mr-3" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="noir mr-3" href="#"><i class="fab fa-youtube"></i></a>
+                                    <a class="noir" href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h3 class="courgette">Catégories</h3>
+                    <ul class="list">
+                        <li><a class="list" href="">Revues</a></li>
+                        <li><a class="list" href="">recettes</a></li>
+                        <li><a class="list" href="">Découvertes</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3 class="courgette">Archives</h3>
+                    <ul class="list">
+                        <li><a class="list" href="">2018</a></li>
+                        <li><a class="list" href="">2019</a></li>
+                        <li><a class="list" href="">2020</a></li>
+                    </ul>
+                </div>
+                <div class="col-8 col-sm-5 col-md-4">
+                    <form>
+
+                        <label class="courgette" for="exampleInputEmail1">Newsletter</label>
+                        <div class=" form-group d-flex">
+                            <input type="email" class=" form-control" id="exampleInputEmail1" placeholder="Email...">
+                            <button type="button" class="btn btn-outline-light oswald">S'inscrire</button>
+                        </div>
+
+                        <h5 class="courgette">Partager</h5>
+                        <div class="d-flex">
+
+                            <div class="mr-3 py-1 px-2 bg-light rounded">
+                                <a class="noir" href="#"><i class="fab fa-facebook-square "></i></a>
+                            </div>
+
+                            <div class="mr-3 py-1 px-2 bg-light rounded">
+                                <a class="noir" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+
+                            <div class="mr-3 py-1 px-2 bg-light rounded">
+                                <a class="noir" href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+
+                            <div class="py-1 px-2 bg-light rounded">
+                                <a class="noir" href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+        </script>
+
+</body>

@@ -1,0 +1,27 @@
+header{
+    background:linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)),url(/paella-header.f91555d5.jpg) no-repeat;
+    color: white;
+    font-family: 'Courgette';
+    background-size: cover;
+    padding-bottom: 82px;
+    background-position: 25% 75%;
+    
+}
+
+.gris{
+    background-color:grey;
+}
+
+
+.badge{
+    margin: 4px;
+}
+img{
+    width: 70%;
+}
+
+h1,h5{
+    font-family: 'Courgette';
+}
+
+/*# sourceMappingURL=/paella.76464e9f.css.map */
