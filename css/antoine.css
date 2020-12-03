@@ -6,7 +6,7 @@ header{
     padding-bottom: 82px;
 }
 .photo_de_profil{
-    max-width: 200px;
+    max-width: 350px;
     border-radius: 50%;
     padding-right: 16px;
 }
@@ -15,12 +15,4 @@ h3{
 }
 p{
     font-weight: 300;
-}
-.photo_avec_texte{
-    max-width: 350px;
-    border-radius: 50%;
-    padding-right: 16px;
-}
-a{
-    color: black;
 }
