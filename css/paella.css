@@ -10,7 +10,6 @@ header{
 
 .gris{
     background-color:grey;
-    height: 70px;
 }
 
 
@@ -20,14 +19,7 @@ header{
 img{
     width: 70%;
 }
-.dessert1{
-    background:url(./../img/recipes/paella/paella-header.jpg) no-repeat;
-    color: white;
-    font-family: 'Courgette';
-    background-size: contain;
-   height: 200px;
-    text-align: center;
-}
-h2,h5{
+
+h1,h5{
     font-family: 'Courgette';
 }

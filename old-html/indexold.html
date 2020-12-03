@@ -1,18 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Team - Cui'zine</title>
+    <title>Cui'zine</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./css/team.css">
+    <link rel="stylesheet" href="./css/homepage.css" />
     <link rel="stylesheet" href="./css/main.css" />
-
     <script src="https://kit.fontawesome.com/d52f97726b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand" href="./index.html">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <a class="navbar-brand" href="#">
                 <h2>Cui'zine</h2>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -25,7 +27,7 @@
                         <a class="nav-link" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="team.html">Equipe</a>
+                        <a class="nav-link" href="./team.html">Equipe</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
@@ -35,104 +37,118 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
         <hr class="bg-light m-0">
 
         <div class="container">
             <div class="row">
                 <div class="col-12 ">
-                    <div class="text-center mb-5 p-5">
-                        <h1 class="titre_article">On apprend en enseignant</h1>
-                        <h2>Un pour tous et tous pour un</h2>
-
+                    <div class="d-flex flex-column align-items-center mb-5 p-5">
+                        <img class="courgette" id="logo" src="./img/logo_square_white.png"
+                            alt="logo de cuisine en blanc">
+                        <h1>Cui'zine</h1>
+                        <h3>Le mag cuisine</h3>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <div class="container-fluid text-center">
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3>Derniers Articles</h3>
+
+            </div>
+
+        </div>
+
+    </div>
     <div class="container">
         <div class="row ">
 
-            <div class="col">
+            <div class="col-12">
 
                 <div class="row mt-5">
 
-
-                    <div class="col-md-12 col-12 col-lg-9">
-                        <div class="row text-center">
-                            <div class="row col-md-12 col-12">
-                                <div class="col-lg-4 col-md-6 col-12 ">
-                                    <img class="photo_de_profil" src="./img/team/tony.jpg" alt="">
-                                    <h3> <a href="./html/team/tony.html">Tony</a> </h3>
-                                    <p>Rédacteur en chef</p>
-
-                                </div>
-                                <div class="col-lg-4 col-md-6 text-center">
-                                    <img class="photo_de_profil" src="./img/team/clementine.jpg" alt="">
-                                    <h3> <a href="./html/team/clementine.html"> Clémentine</a></h3>
-                                    <p>Journaliste culinaire</p>
-
-                                </div>
-                                <div class="col-lg-4 col-md-6 text-center">
-                                    <img class="photo_de_profil" src="./img/team/antoine.jpg" alt="">
-                                    <h3> <a href="./antoine.html">Antoine</a></h3>
-                                    <p>Gouteur professionnel</p>
-
-                                </div>
-                                <div class="col-lg-4 col-md-6 text-center">
-                                    <img class="photo_de_profil" src="./img/team/tony.jpg" alt="">
-                                    <h3> <a href="./html/team/tony.html">Tony</a> </h3>
-                                    <p>Rédacteur en chef</p>
-
-                                </div>
-                                <div class="col-lg-4 col-md-6 text-center">
-                                    <img class="photo_de_profil" src="./img/team/clementine.jpg" alt="">
-                                    <h3> <a href="./html/team/clementine.html"> Clémentine</a></h3>
-                                    <p>Journaliste culinaire</p>
-
-                                </div>
-                                <div class="col-lg-4 col-md-6 text-center">
-                                    <img class="photo_de_profil" src="./img/team/antoine.jpg" alt="">
-                                    <h3> <a href="./antoine.html">Antoine</a></h3>
-                                    <p>Gouteur professionnel</p>
-
-                                </div>
-
-
-
-                            </div>
-
-
-
-                        </div>
-
-
-                        
-                       
-                        
-
-
-
+                    <div class="col-md-4 col-12 col-lg-2">
+                        <img class="img-fluid mb-3" src="./img/articles/suzette/suzette-small.jpg" alt="">
                     </div>
 
-
-                    <div class="container-fluid col-lg-3 col-md-4 d-none d-lg-block float-right">
+                    <div class="col-md-8 col-12 col-lg-8">
+                        <h3 class="courgette"> <a href="./suzette.html">Chez Suzette, la nouvelle crêperie qui fait parler d'elle</a></h3>
+                        <p class="font-weight-light">La franchise "Chez Suzette" qui fait un carton chez les bretons
+                            ouvre son premier
+                            restaurant
+                            à
+                            Paris
+                            dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au
+                            froment
+                            ou au sarrazin!</p>
+                    </div>
+                    <div class="container-fluid col-lg-2 d-none d-lg-block float-right">
                         <div>
                             <form>
                                 <div class="form-group ">
                                     <label class="courgette" for="text">Recherche</label>
                                     <input type="text" class="form-control" placeholder="Recherche...">
-                                    <button type="button"
-                                        class="btn btn-outline-dark btn-block font-weight-bold">OK</button>
+                                    <button type="button" class="btn btn-outline-dark btn-block font-weight-bold">OK</button>
                                 </div>
-                                <div class=" form-group">
-                                    <label class="courgette" for="exampleInputEmail1">Newsletter</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        placeholder="Email...">
-                                    <button type="button"
-                                        class="btn btn-outline-dark btn-block font-weight-bold ">S'inscrire</button>
-                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class=" col-12 col-lg-12">
+
+                <div class="row mt-1">
+
+                    <div class="col-md-4 col-12 col-lg-2">
+                        <img class="img-fluid mb-3" src="./img/articles/metro/metro-small.jpg" alt="">
+                    </div>
+
+                    <div class="col-md-8 col-12 col-lg-8">
+                        <h3 class="courgette"> <a href="metro.html">Le Metro dessert</a> </h3>
+                        <p class="font-weight-light">LGermain est ferrovipahte (ndlr:fan de train), son fils Maxime est
+                            pâtissier. Ils ont décidé de réunir leur
+                            deux passions dans un restaurant à la déco inspiré du métro parisien. A voir absolument,
+                            mais qu'en est-il d'y
+                            aller pour manger? Clémentine entre en gare et nous donne son avis.</p>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block float-right">
+                        <div>
+                            <div class=" form-group">
+                                <label class="courgette" for="exampleInputEmail1">Newsletter</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email...">
+                                <button type="button"
+                                    class="btn btn-outline-dark btn-block font-weight-bold ">S'inscrire</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class=" col-12 col-lg-12">
+
+                <div class="row mt-1">
+
+                    <div class="col-md-4 col-12 col-lg-2">
+                        <img class="img-fluid mb-3" src="./img/articles/vitaly/vitaly-small.jpg" alt="">
+                    </div>
+
+                    <div class="col-md-8 col-12 col-lg-8    ">
+                        <h3 class="courgette">  <a href="./vitaly.html">Vitaly, le vegan italien</a></h3>
+                        <p class="font-weight-light">Quand on pense italien, on pense lasagne et jambon de Parme. Ils
+                            l'ont fait, les saveurs de l'Italie à portée
+                            des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block float-right">
+                        <div>
+                            <form>
                                 <div>
                                     <h5 class="courgette">Partager</h5>
                                     <a class="noir mr-3" href="#"><i class="fab fa-facebook-square "></i></a>
@@ -146,18 +162,22 @@
 
                     </div>
 
-
                 </div>
+
+
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <a href="./page2.html" class="text-decoration-none text-dark">
+                            << Voir les articles précédents</a>
+                    </div>
+                </div>
+
             </div>
-
-
-
 
 
         </div>
 
 
-    </div>
     </div>
     </div>
     <footer>
@@ -220,4 +240,8 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
         </script>
 
+
+
 </body>
+
+</html>
