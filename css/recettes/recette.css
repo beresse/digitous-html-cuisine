@@ -1,0 +1,35 @@
+header{
+    background:linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)),url(../../img/recipes/paella/paella-header.jpg) no-repeat;
+    color: white;
+    font-family: 'Courgette';
+    background-size: cover;
+    padding-bottom: 82px;
+    background-position: 25% 75%;
+    
+}
+.gris{
+    background-color: grey;
+    text-align: center;
+}
+.badge{
+    font-weight: 400
+    ;
+}
+
+.box {
+    position: relative;
+ }
+ img {
+    width: 100%;
+    height: auto;
+    
+ }
+ .sponso {
+     background-color: rgba(126, 124, 124,1.0);
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    font-size: 13px;
+    padding: 3px;
+   
+ }

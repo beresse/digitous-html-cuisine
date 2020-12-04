@@ -1,0 +1,60 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body,
+.navbar-nav {
+    font-family: 'Oswald';
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h5,
+.titre_formulaire {
+    font-family: 'Courgette';
+}
+
+.titre_section {
+    font-family: 'Oswald';
+}
+
+p,.list_adresse {
+    opacity: 70%;
+    list-style: none    ;
+
+}
+
+a {
+    color: black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    margin-top: 48px;
+}
+
+.list {
+    color: white;
+    list-style: none;
+}
+
+.logo_site {
+    height: 80px;
+
+}
+
+.section_header {
+    padding: 62px;
+}
+
+iframe {
+    width:100%;
+    height: 500px;
+    
+}

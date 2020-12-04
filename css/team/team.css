@@ -1,0 +1,23 @@
+header{
+    background:linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)),url(../../img/team/team.jpg) no-repeat center;
+    color: white;
+    font-family: 'Courgette';
+    background-size: cover;
+    padding-bottom: 82px;
+}
+.profil_pics{
+    height: 150px;
+    border-radius: 50%;
+}
+.profil_text{
+    background-color: red;
+    height:  32%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    margin-top: 0px;
+}
