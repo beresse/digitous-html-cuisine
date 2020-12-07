@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href=".././css/contact.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin="" />
@@ -39,7 +40,7 @@
                         <a class="nav-link" href="./team/team.html">Equipe</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contactleaflet.html">Blog</a>
+                        <a class="nav-link" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact</a>
@@ -77,52 +78,7 @@
                     </ul>
                 </div>
 
-
-
-
-
-
-                <div>
-                    <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="900" height="500" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=station%20f&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                                href="https://embedgooglemap.net/mapv2/"></a></div>
-
-                    </div>
-                </div>
-                <div class="text-center mt-2">
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-                        Danger Zone
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade container-fluid" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-lg modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Carte sur leaflet</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="gmap_canvas"><iframe width="900" height="500" id="gmap_canvas"
-                                    src="https://maps.google.com/maps?q=station%20f&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                                    href="https://embedgooglemap.net/mapv2/"></a></div>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
+                <div id="maCarte"></div>
 
             </div>
             <div class="col-lg-2 d-none d-lg-block">
@@ -204,6 +160,50 @@
 
         </div>
     </footer>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script>
+        var musées = {
+            "Konexio - Station F <br/> 5 Parvis Alan Turing <br/>75013 Paris": { "lat": 48.833339550000005, "lon": 2.3717968373682856 },
+            
+
+
+        };
+        var tableauMarqueurs = [];
+        // je charge la carte
+        var carte = L.map('maCarte').setView([48.833339550000005, 2.3717968373682856], 14);
+        // je charge les couches de la carte via L.tileLayer
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+            // Il est toujours bien de laisser le lien vers la source des données
+            attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+            minZoom: 10,
+            maxZoom: 16,
+        }).addTo(carte);
+
+        var marqueurs = L.markerClusterGroup();
+
+        for (musée in musées) {
+            // ici j'ai le marqueur avec un popup
+            var marqueur = L.marker([musées[musée].lat, musées[musée].lon]);//.addTo(carte);
+            marqueur.bindPopup("<p>" + musée + "</p>");
+            marqueurs.addLayer(marqueur);
+
+            tableauMarqueurs.push(marqueur);
+
+
+        }
+        var groupe = new L.featureGroup(tableauMarqueurs);
+        carte.fitBounds(groupe.getBounds());
+
+        carte.addLayer(marqueurs);
+
+
+
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
